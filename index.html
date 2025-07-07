@@ -1,40 +1,61 @@
 
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <title>متجر أبو سفيان</title>
     <style>
-        body { font-family: Tahoma, sans-serif; direction: rtl; padding: 20px; background: #f2f2f2; color: #333; }
-        header { background: #ffcc00; padding: 15px; font-size: 24px; text-align: center; font-weight: bold; }
-        .product { background: white; margin: 15px 0; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); display: flex; align-items: center; }
-        .product img { width: 90px; height: 90px; object-fit: cover; margin-left: 15px; border-radius: 8px; }
-        .product-info { flex: 1; }
-        footer { margin-top: 40px; text-align: center; font-size: 14px; color: #777; }
+        body { font-family: 'Arial', sans-serif; background-color: #f4f4f4; color: #333; padding: 20px; }
+        header { background: #ffcc00; padding: 20px; text-align: center; font-size: 24px; font-weight: bold; }
+        .product { border: 1px solid #ddd; padding: 10px; margin: 10px 0; background: white; border-radius: 10px; }
+        .product img { max-width: 100px; display: block; margin-bottom: 10px; }
+        .product-title { font-size: 20px; font-weight: bold; }
+        .price { color: green; font-size: 18px; margin-top: 5px; }
+        .cart { margin-top: 20px; background: #fff; padding: 10px; border-radius: 10px; border: 1px solid #ccc; }
+        footer { margin-top: 30px; padding: 20px; background: #eee; text-align: center; }
+        button { padding: 10px; background: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; }
     </style>
+    <script>
+        let total = 0;
+        function addToCart(price) {
+            total += price;
+            document.getElementById('total').innerText = 'إجمالي السعر: ' + total + ' جنيه';
+        }
+    </script>
 </head>
 <body>
-    <header>متجر أبو سفيان</header>
+    <header>🛒 متجر أبو سفيان</header>
 
     <div class="product">
-        <img src="https://i.imgur.com/ExdKOOz.png" alt="زيت عافية">
-        <div class="product-info">
-            <h3>زيت عافية - 1 لتر</h3>
-            <p>السعر: 85 جنيه</p>
-        </div>
+        <img src="https://i.imgur.com/Q9LGYtG.jpg" alt="شاي العروسة">
+        <div class="product-title">شاي العروسة - الحجم الكبير</div>
+        <div class="price">40 جنيه</div>
+        <button onclick="addToCart(40)">أضف للسلة</button>
+    </div>
+    <div class="product">
+        <img src="https://i.imgur.com/dj13aKl.jpg" alt="زيت عافية">
+        <div class="product-title">زيت عافية 1 لتر</div>
+        <div class="price">70 جنيه</div>
+        <button onclick="addToCart(70)">أضف للسلة</button>
+    </div>
+    <div class="product">
+        <img src="https://i.imgur.com/yO8zTnC.jpg" alt="لبن بخيره">
+        <div class="product-title">لبن بخيره كامل الدسم</div>
+        <div class="price">25 جنيه</div>
+        <button onclick="addToCart(25)">أضف للسلة</button>
     </div>
 
-    <div class="product">
-        <img src="https://i.imgur.com/G9bDaPH.png" alt="سكر الأسرة">
-        <div class="product-info">
-            <h3>سكر الأسرة - 1 كجم</h3>
-            <p>السعر: 27 جنيه</p>
-        </div>
+    <div class="cart">
+        <h3>🧺 سلة المشتريات</h3>
+        <div id="total">إجمالي السعر: 0 جنيه</div>
+        <p>🛵 رسوم التوصيل: يحددها المستخدم (مثلاً: 15 أو 20 جنيه)</p>
+        <p>💵 الدفع: كاش عند الاستلام أو رصيد داخل التطبيق</p>
     </div>
 
     <footer>
-        سياسة الخصوصية | من نحن | اتصل بنا<br>
-        &copy; 2025 متجر أبو سفيان
+        📞 للتواصل: 01093042462 - متجر أبو سفيان<br>
+        🏠 أسوان - مركز دراو<br>
+        🔐 سياسة الخصوصية | من نحن | اتصل بنا
     </footer>
 </body>
 </html>
