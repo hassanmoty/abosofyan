@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>سلة المشتريات - متجر أبو سفيان</title>
+  <style>
+    body { font-family: Arial; background: #f5f5f5; direction: rtl; margin: 0; padding: 0; }
+    nav { background: #333; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    .container { max-width: 900px; margin: 30px auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    table th, table td { padding: 10px; border-bottom: 1px solid #ccc; text-align: center; }
+    .total { font-size: 18px; margin-top: 20px; color: green; text-align: left; }
+    .btn-confirm { margin-top: 20px; background: #28a745; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer; }
+    footer { margin-top: 30px; padding: 15px; background: #eee; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="products.html">المنتجات</a>
+    <a href="cart.html">السلة</a>
+    <a href="contact.html">اتصل بنا</a>
+    <a href="about.html">من نحن</a>
+    <a href="privacy.html">الخصوصية</a>
+  </nav>
+
+  <div class="container">
+    <h1>🧺 سلة المشتريات</h1>
+    <table>
+      <tr>
+        <th>الصنف</th>
+        <th>الكمية</th>
+        <th>السعر</th>
+        <th>الإجمالي</th>
+      </tr>
+      <tr>
+        <td>زيت عافية</td>
+        <td>2</td>
+        <td>70</td>
+        <td>140</td>
+      </tr>
+    </table>
+
+    <div class="total"><strong>الإجمالي: 140 جنيه</strong></div>
+
+    <button class="btn-confirm">تأكيد الطلب</button>
+  </div>
+
+  <footer>© متجر أبو سفيان</footer>
+</body>
+</html>
