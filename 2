@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>المنتجات - متجر أبو سفيان</title>
+  <style>
+    body { font-family: 'Arial'; background: #f5f5f5; direction: rtl; margin: 0; padding: 0; }
+    nav { background: #333; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    .container { max-width: 1000px; margin: 30px auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
+    .products { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+    .product { background: #fafafa; border: 1px solid #ddd; border-radius: 8px; padding: 10px; text-align: center; }
+    .product img { width: 100%; height: 150px; object-fit: contain; border-bottom: 1px solid #ccc; margin-bottom: 10px; }
+    .product h3 { font-size: 18px; }
+    .product p { font-size: 16px; color: green; }
+    .product button { background: #28a745; color: white; border: none; padding: 8px 12px; border-radius: 5px; cursor: pointer; }
+    footer { margin-top: 30px; padding: 15px; background: #eee; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="products.html">المنتجات</a>
+    <a href="cart.html">السلة</a>
+    <a href="contact.html">اتصل بنا</a>
+    <a href="about.html">من نحن</a>
+    <a href="privacy.html">الخصوصية</a>
+  </nav>
+
+  <div class="container">
+    <h1>🛒 المنتجات المتوفرة</h1>
+    <div class="products">
+      <div class="product">
+        <img src="https://i.imgur.com/Q9LGYtG.jpg" alt="شاي العروسة">
+        <h3>شاي العروسة - كبير</h3>
+        <p>40 جنيه</p>
+        <button>أضف للسلة</button>
+      </div>
+      <div class="product">
+        <img src="https://i.imgur.com/dj13aKl.jpg" alt="زيت عافية">
+        <h3>زيت عافية 1 لتر</h3>
+        <p>70 جنيه</p>
+        <button>أضف للسلة</button>
+      </div>
+      <div class="product">
+        <img src="https://i.imgur.com/yO8zTnC.jpg" alt="لبن بخيره">
+        <h3>لبن بخيره كامل الدسم</h3>
+        <p>25 جنيه</p>
+        <button>أضف للسلة</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>جميع الحقوق محفوظة © متجر أبو سفيان</footer>
+</body>
+</html>
